@@ -5,7 +5,6 @@ import countryView from "./views/countryView.js";
 import searchView from "./views/searchView.js";
 import resultsView from "./views/resultsView.js";
 import browseView from "./views/browseView.js";
-import mapView from "./views/mapView.js";
 import paginationView from "./views/paginationView.js";
 
 const reload = document.querySelector(".item-flex");
@@ -34,7 +33,7 @@ const controlCountries = async function () {
 
     //2. Rendering
     countryView.render(model.state.country, model.state.weather);
-    mapView._loadMap(model.state.country);
+    countryView._loadMap(model.state.country);
   } catch (err) {
     countryView.renderError(err);
   }
