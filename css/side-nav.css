@@ -1,0 +1,81 @@
+.side-nav-container {
+  background-color: #eee;
+  grid-column: 1 / 2;
+  grid-row: 2 / 5;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 9fr 1fr;
+}
+.side-nav {
+  list-style: none;
+}
+.side-nav-item {
+  padding: 2.4rem;
+  height: 9.6rem;
+
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.side-nav-item:hover,
+.side-nav-item-active {
+  background-color: #bbb;
+  border-left: 1rem solid rgb(103, 65, 217);
+  box-shadow: inset 6rem 0rem 5rem rgba(103, 65, 217, 0.15);
+}
+.side-nav-flag {
+  width: 20%;
+  height: 100%;
+}
+.side-nav-link {
+  font-size: 2.6rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+
+  align-self: center;
+}
+
+.pagination-container {
+  grid-row: 2 / 3;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2.8rem;
+}
+.pagination-forward {
+  grid-column: 3 / 4;
+}
+.pagination-back {
+  grid-column: 1 / 2;
+}
+.pag-btn {
+  border: none;
+}
+.pag-icon {
+  align-self: center;
+  justify-self: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #222;
+  background-color: #fff;
+  border: 1px solid #111;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.pag-icon:hover {
+  background-color: #ccc;
+}
+.pagination-page {
+  align-self: center;
+  justify-self: center;
+  grid-column: 2 / 3;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #555;
+}

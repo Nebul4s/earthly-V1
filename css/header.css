@@ -1,0 +1,124 @@
+.header {
+  height: 12rem;
+  padding: 1rem 1.8rem 1rem 1.8rem;
+  background-color: #ced4da;
+
+  grid-column: 1 / 3;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-img {
+  align-self: center;
+  width: 6.4rem;
+}
+
+.title {
+  font-family: "Square Peg", cursive;
+}
+
+.icon {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.input-group {
+  background-color: white;
+  border-radius: 5rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
+  background: transparent;
+  padding: 0.25rem;
+  border: 0;
+
+  flex: 1 1 auto;
+}
+
+.search__field {
+  width: 42rem;
+  font-size: 2rem;
+  padding-left: 3.2rem;
+  border: none;
+  border-radius: 10rem;
+}
+
+.search__field:focus {
+  outline: none;
+}
+
+.search__btn {
+  background-image: linear-gradient(to top left, #6741d9, #00a2ba);
+  height: 6rem;
+  border: none;
+  border-radius: 10rem;
+
+  font-size: 2rem;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  transition: all 1s;
+}
+
+.search__btn:hover {
+  background-image: linear-gradient(to bottom right, #6741d9, #00a2ba);
+}
+
+.nav-list {
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.item-flex {
+  font-size: 3.6rem;
+  cursor: pointer;
+  padding-left: 1.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.btn-browse {
+  height: 100%;
+  font-size: 2.4rem;
+  font-weight: 600;
+
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  position: relative;
+}
+
+.browse-icon {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.message {
+  width: 24rem;
+  margin: auto;
+  padding-top: 20rem;
+
+  font-size: 2rem;
+}
