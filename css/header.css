@@ -9,7 +9,32 @@
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 900px) {
+  .header {
+    gap: 0;
+  }
+}
+.title-container {
+  font-size: 3.6rem;
+  cursor: pointer;
+  padding-left: 1.2rem;
+  width: 20%;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+@media (max-width: 800px) {
+  .title-container {
+    font-size: 3rem;
+    width: 15%;
+    gap: 1.6rem;
+  }
+  .header-img {
+    display: none;
+  }
+}
 .header-img {
   align-self: center;
   width: 6.4rem;
@@ -19,11 +44,13 @@
   font-family: "Square Peg", cursive;
 }
 
-.icon {
+.search-icon {
   width: 3.6rem;
   height: 3.6rem;
 }
-
+.search {
+  width: 40%;
+}
 .input-group {
   background-color: white;
   border-radius: 5rem;
@@ -41,7 +68,7 @@
 }
 
 .search__field {
-  width: 42rem;
+  width: 100%;
   font-size: 2rem;
   padding-left: 3.2rem;
   border: none;
@@ -54,7 +81,8 @@
 
 .search__btn {
   background-image: linear-gradient(to top left, #6741d9, #00a2ba);
-  height: 6rem;
+  height: 100%;
+  width: 50%;
   border: none;
   border-radius: 10rem;
 
@@ -64,12 +92,44 @@
   cursor: pointer;
 
   display: flex;
+  flex-basis: 0;
   align-items: center;
   justify-content: space-between;
   gap: 0.8rem;
   transition: all 1s;
 }
+@media (max-width: 1250px) {
+  .search__text {
+    font-size: 1rem;
+  }
+  .search__field {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 1050px) {
+  .search__btn {
+    width: 100%;
+    gap: 0;
 
+    flex-basis: 0;
+  }
+  @media (max-width: 800px) {
+    .search {
+      width: 50%;
+    }
+  }
+  .search-icon {
+    display: block;
+    height: 3.6rem;
+    width: 3.6rem;
+  }
+  .search-text {
+    display: none;
+  }
+  .search__field {
+    font-size: 1.6rem;
+  }
+}
 .search__btn:hover {
   background-image: linear-gradient(to bottom right, #6741d9, #00a2ba);
 }
@@ -81,22 +141,40 @@
   justify-content: space-between;
   align-items: center;
 }
-
+@media (max-width: 1000px) {
+  .nav {
+    width: 30%;
+  }
+  .btn-browse span {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 900px) {
+  .nav {
+    width: 20%;
+  }
+  .btn-browse {
+    gap: 0rem;
+  }
+  .btn-browse span {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  .nav {
+    width: 10%;
+  }
+  .btn-browse {
+    gap: 0rem;
+  }
+  .btn-browse span {
+    display: none;
+  }
+}
 .nav__btn {
   background: none;
   border: none;
   cursor: pointer;
-}
-
-.item-flex {
-  font-size: 3.6rem;
-  cursor: pointer;
-  padding-left: 1.2rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2.4rem;
 }
 
 .btn-browse {

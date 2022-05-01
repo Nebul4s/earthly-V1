@@ -7,7 +7,7 @@ import resultsView from "./views/resultsView.js";
 import browseView from "./views/browseView.js";
 import paginationView from "./views/paginationView.js";
 
-const reload = document.querySelector(".item-flex");
+const reload = document.querySelector(".title-container");
 reload.addEventListener("click", function () {
   window.location.hash = "";
   location.reload();

@@ -29,6 +29,21 @@
   width: 20%;
   height: 100%;
 }
+@media (max-width: 1000px) {
+  .side-nav-flag {
+    height: 80%;
+  }
+}
+@media (max-width: 800px) {
+  .side-nav-flag {
+    height: 60%;
+  }
+}
+@media (max-width: 600px) {
+  .side-nav-flag {
+    display: none;
+  }
+}
 .side-nav-link {
   font-size: 2.6rem;
   font-weight: 500;
@@ -37,7 +52,11 @@
 
   align-self: center;
 }
-
+@media (max-width: 800px) {
+  .side-nav-link {
+    font-size: 2rem;
+  }
+}
 .pagination-container {
   grid-row: 2 / 3;
 
@@ -78,4 +97,9 @@
   font-size: 2.4rem;
   font-weight: 400;
   color: #555;
+}
+@media (max-width: 600px) {
+  .pagination-page {
+    font-size: 2rem;
+  }
 }
